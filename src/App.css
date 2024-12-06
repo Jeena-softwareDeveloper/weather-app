@@ -1,0 +1,117 @@
+/* Base Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Galaxy-themed gradient */
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    border-radius: 15px;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Input Styling */
+  .inputcontainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .inputs {
+    width: 100%;
+    margin-left:-13px;
+    align-items: center;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .weathercheck{
+    margin-left: 12px;
+    background: #3e3e3e;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+   
+    border-radius: 12px;
+  }
+  .inputs::placeholder {
+    color: #aaa;
+  }
+  
+  .inputs:focus {
+    background: #444;
+    box-shadow: 0px 4px 12px rgba(253, 187, 45, 0.4);
+    transform: scale(1.02); /* Slight zoom on focus */
+  }
+  
+  /* Weather Details Styling */
+  .iconimg {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+  }
+  
+  .temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .city {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Moves up slightly */
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Latitude and Longitude */
+  .container div:last-child {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+
+.cord div:last-child {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
